@@ -1,0 +1,129 @@
+@import url("./index.scss");
+
+.Header {
+  @apply flex justify-center items-center gap-10 fixed;
+  width: 100vw;
+  color: var(--white);
+  padding: 20px 0px;
+  background-color: var(--black);
+  z-index: 1500;
+
+  .Header_logo_section {
+    @apply flex justify-center items-center;
+    width: 200px;
+
+    .Header_logo {
+      width: 60px;
+      height: 60px;
+      animation: pulse 1.5s linear infinite;
+    }
+    .Header_logo_title {
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+  }
+  .Header_nav_section {
+    @apply flex justify-center items-center;
+    width: 800px;
+
+    .Header_nav {
+      @apply flex justify-center items-center gap-5;
+
+      .Header_nav_item {
+        @apply flex justify-center items-center cursor-pointer;
+        width: 120px;
+        height: 40px;
+        border: 2px solid transparent;
+        color: var(--grey);
+        border-radius: 10px;
+        transition: 0.5s all;
+
+        &:hover {
+          color: var(--white);
+          background-color: var(--pink);
+          box-shadow: 0 0 5px var(--pink), 0 0 25px var(--pink);
+          border-color: var(--pink);
+        }
+        &:active {
+          transform: translateY(15px);
+        }
+      }
+    }
+  }
+  .Header_contacts_section {
+    @apply flex justify-center items-center;
+    width: 250px;
+    .Header_contacts {
+      @apply flex justify-center items-center gap-6;
+
+      .Header_feedback {
+        @apply flex justify-center items-center p-2 cursor-pointer;
+        background-color: var(--white);
+        color: var(--black);
+        border-radius: 10px;
+        height: 40px;
+        width: 160px;
+        transition: 0.5s all;
+        position: relative;
+        text-decoration: none;
+        z-index: 1;
+
+        &:before,
+        &:after {
+          content: "";
+          position: absolute;
+          z-index: -1;
+        }
+        &:after {
+          height: 0;
+          width: 100%;
+          left: 0;
+          background: var(--pink);
+          transition: 0.5s;
+        }
+        &.--shine {
+          overflow: hidden;
+          &:after {
+            height: 100%;
+            width: 0;
+            left: -29%;
+            top: 0;
+            background: var(--pink);
+            transform: skew(50deg);
+            transform-origin: top left;
+            transition: 0.5s;
+          }
+          &:hover {
+            color: var(--white);
+            &:after {
+              width: 125%;
+            }
+          }
+        }
+
+        &:active {
+          transform: translateY(15px);
+        }
+      }
+      .Header_language {
+        @apply flex justify-center items-center p-2 cursor-pointer gap-1;
+        .Header_language_img {
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
