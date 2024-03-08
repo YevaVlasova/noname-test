@@ -1,9 +1,9 @@
 @import url("./index.scss");
 
 .Layout {
-  @apply flex justify-center items-center;
+  @apply flex justify-center items-center relative;
   flex-direction: column;
-  padding-top: 120px;
+
   .Layout_body {
     @apply flex justify-between items-center;
     height: auto;
