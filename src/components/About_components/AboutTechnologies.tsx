@@ -5,9 +5,11 @@ import { Url } from "../../interfaces/Url-interface";
 const AboutTechnologies = () => {
   const [url, setUrl] = useState<Url | null>(null);
   const [activeButton, setActiveButton] = useState(0);
+  const [currTechnology, setCurrTechnology] = useState("Web технології");
 
   function getCurrUrls(id: number) {
     setUrl(getUrls(id));
+    if (url) setCurrTechnology(url.technology);
   }
   useEffect(() => {
     getCurrUrls(activeButton);
@@ -79,7 +81,7 @@ const AboutTechnologies = () => {
                 console.log(url);
               }}
             >
-              Web технології
+              {currTechnology}
             </h2>
             <div className="About_technologies_right_data">
               {url &&
