@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 import "./styles/App.scss";
 import { generateStars } from "./services/starService";
+import Cases from "./components/Cases";
 
 function App() {
   useEffect(() => {
@@ -16,6 +17,7 @@ function App() {
       <Header></Header>
       <Main></Main>
       <About></About>
+      <Cases></Cases>
     </div>
   );
 }

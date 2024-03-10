@@ -1,0 +1,52 @@
+.Cases {
+  .Cases_body {
+    @apply flex justify-center items-center flex-col;
+  }
+}
+
+.AllCases {
+  height: 1400px;
+}
+
+.CasesSlider {
+  @apply flex justify-start items-center flex-col text-start;
+  .CasesSlider_title {
+    @apply text-start flex justify-start items-start;
+    font-size: 70px;
+    width: 90%;
+    font-weight: 900;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.6s, transform 0.6s;
+    animation: titleColorAnimation 5s infinite linear;
+    text-shadow: 0 0 3px #7000ff;
+  }
+}
+
+.CasesSlider_title.animate-slide-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@keyframes titleColorAnimation {
+  0% {
+    opacity: 0.9;
+    text-shadow: 0 0 10px #7000ff;
+  }
+  25% {
+    opacity: 1;
+    text-shadow: 0 0 10px #f13dd4;
+  }
+  50% {
+    opacity: 0.9;
+    text-shadow: 0 0 10px #f83a3a;
+  }
+  75% {
+    opacity: 1;
+    text-shadow: 0 0 10px #f13dd4;
+  }
+  100% {
+    opacity: 0.9;
+    text-shadow: 0 0 10px #7000ff;
+  }
+}
