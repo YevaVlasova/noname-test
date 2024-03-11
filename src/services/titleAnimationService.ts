@@ -34,3 +34,16 @@ export const handleAnimation = (title: any) => {
     }
   }
 };
+
+export const modalEnterAnimation = (title: any, modal: boolean) => {
+  console.log(modal);
+  if (title.current) {
+    if (!modal) {
+      title.current.classList.remove("animate_out");
+      title.current.classList.add("animate_in");
+    } else {
+      title.current.classList.remove("animate_in");
+      title.current.classList.add("animate_out");
+    }
+  }
+};

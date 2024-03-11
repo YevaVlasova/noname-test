@@ -1,117 +1,233 @@
 @import url("./index.scss");
 
 .Header {
-  @apply flex justify-center items-center gap-10 fixed;
-  width: 100vw;
-  color: var(--white);
-  padding: 20px 0px;
-  background-color: var(--black);
-  z-index: 1500;
-
-  .Header_logo_section {
-    @apply flex justify-center items-center;
-    width: 200px;
-
-    .Header_logo {
-      width: 60px;
-      height: 60px;
-    }
-    .Header_logo_title {
-      text-transform: uppercase;
-      font-weight: 800;
-    }
-  }
-  .Header_nav_section {
-    @apply flex justify-center items-center;
-    width: 800px;
-
-    .Header_nav {
-      @apply flex justify-center items-center gap-5;
-
-      .Header_nav_item {
-        @apply flex justify-center items-center cursor-pointer;
-        width: 120px;
-        height: 40px;
-        border: 2px solid transparent;
-        color: var(--grey);
-        border-radius: 10px;
-        transition: 0.5s all;
-
-        &:hover {
-          color: var(--white);
-          background-color: var(--pink);
-          box-shadow: 0 0 5px var(--pink), 0 0 25px var(--pink);
-          border-color: var(--pink);
+  .Modal {
+    position: fixed;
+    opacity: 0;
+    transition: 0.6s all;
+    z-index: 2000 !important;
+    .Header_modal {
+      position: fixed;
+      height: 100vh;
+      width: 350px;
+      right: 0;
+      background-color: var(--black);
+      border-left: 2px solid var(--white);
+      z-index: 2000;
+      animation: borderGlow 2s infinite;
+      .Header_modal_close {
+        @apply flex justify-start items-start;
+        padding: 20px;
+        width: 100%;
+        .Header_modal_close_btn {
+          @apply flex justify-center items-center;
+          width: 45px;
+          height: 45px;
+          border-radius: 50%;
+          transition: 0.5s all;
+          &:hover {
+            color: var(--white);
+            background-color: var(--pink);
+            box-shadow: 0 0 5px var(--pink), 0 0 25px var(--pink);
+            border-color: var(--pink);
+          }
+          &:active {
+            transform: translateY(15px);
+          }
         }
-        &:active {
-          transform: translateY(15px);
+      }
+      .Header_modal_btn {
+        @apply flex justify-center items-center gap-5 flex-col;
+        margin-top: 50px;
+        .Header_nav_item {
+          @apply flex justify-center items-center cursor-pointer;
+          width: 50%;
+          height: 40px;
+          border: 2px solid transparent;
+          color: var(--grey);
+          border-radius: 10px;
+          transition: 0.5s all;
+
+          &:hover {
+            color: var(--white);
+            background-color: var(--pink);
+            box-shadow: 0 0 5px var(--pink), 0 0 25px var(--pink);
+            border-color: var(--pink);
+            width: 80%;
+          }
+          &:active {
+            transform: translateY(15px);
+          }
         }
       }
     }
+    .Header_overlay {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      background-color: var(--black);
+      backdrop-filter: blur(50px);
+      opacity: 0.6;
+      z-index: 1999;
+    }
   }
-  .Header_contacts_section {
-    @apply flex justify-center items-center;
-    width: 250px;
-    .Header_contacts {
-      @apply flex justify-center items-center gap-6;
 
-      .Header_feedback {
-        @apply flex justify-center items-center p-2 cursor-pointer;
-        background-color: var(--white);
-        color: var(--black);
-        border-radius: 10px;
-        height: 40px;
-        width: 160px;
-        transition: 0.5s all;
-        position: relative;
-        text-decoration: none;
-        z-index: 1;
+  .Header_burger {
+    @apply flex justify-between items-end gap-10 fixed;
+    width: 100vw;
+    color: var(--white);
+    padding: 20px 40px;
+    background-color: var(--black);
+    z-index: 1500;
+    .Header_logo_section {
+      @apply flex justify-center items-center;
+      width: 200px;
 
-        &:before,
-        &:after {
-          content: "";
-          position: absolute;
-          z-index: -1;
+      .Header_logo {
+        width: 60px;
+        height: 60px;
+      }
+      .Header_logo_title {
+        text-transform: uppercase;
+        font-weight: 800;
+      }
+    }
+    .Header_burger_btn {
+      @apply flex justify-center items-center;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      transition: 0.5s all;
+      &:hover {
+        color: var(--white);
+        background-color: var(--pink);
+        box-shadow: 0 0 5px var(--pink), 0 0 25px var(--pink);
+        border-color: var(--pink);
+      }
+      &:active {
+        transform: translateY(15px);
+      }
+    }
+  }
+  .Header_body {
+    @apply flex justify-center items-center gap-10 fixed;
+    width: 100vw;
+    color: var(--white);
+    padding: 20px 0px;
+    background-color: var(--black);
+    z-index: 1500;
+    .Header_logo_section {
+      @apply flex justify-center items-center;
+      width: 200px;
+
+      .Header_logo {
+        width: 60px;
+        height: 60px;
+      }
+      .Header_logo_title {
+        text-transform: uppercase;
+        font-weight: 800;
+      }
+    }
+    .Header_nav_section {
+      @apply flex justify-center items-center;
+      width: 800px;
+
+      .Header_nav {
+        @apply flex justify-center items-center gap-5;
+
+        .Header_nav_item {
+          @apply flex justify-center items-center cursor-pointer;
+          width: 80px;
+          height: 40px;
+          border: 2px solid transparent;
+          color: var(--grey);
+          border-radius: 10px;
+          transition: 0.5s all;
+
+          &:hover {
+            color: var(--white);
+            background-color: var(--pink);
+            box-shadow: 0 0 5px var(--pink), 0 0 25px var(--pink);
+            border-color: var(--pink);
+            width: 120px;
+          }
+          &:active {
+            transform: translateY(15px);
+          }
         }
-        &:after {
-          height: 0;
-          width: 100%;
-          left: 0;
-          background: var(--pink);
-          transition: 0.5s;
-        }
-        &.--shine {
-          overflow: hidden;
+      }
+    }
+    .Header_contacts_section {
+      @apply flex justify-center items-center;
+      width: 250px;
+      .Header_contacts {
+        @apply flex justify-center items-center gap-6;
+
+        .Header_feedback {
+          @apply flex justify-center items-center p-2 cursor-pointer;
+          background-color: var(--white);
+          color: var(--black);
+          border-radius: 10px;
+          height: 40px;
+          width: 160px;
+          transition: 0.5s all;
+          position: relative;
+          text-decoration: none;
+          z-index: 1;
+
+          &:before,
           &:after {
-            height: 100%;
-            width: 0;
-            left: -29%;
-            top: 0;
+            content: "";
+            position: absolute;
+            z-index: -1;
+          }
+          &:after {
+            height: 0;
+            width: 100%;
+            left: 0;
             background: var(--pink);
-            transform: skew(50deg);
-            transform-origin: top left;
             transition: 0.5s;
           }
-          &:hover {
-            box-shadow: 0 0 5px var(--pink), 0 0 25px var(--pink);
-            color: var(--white);
+          &.--shine {
+            overflow: hidden;
             &:after {
-              width: 125%;
+              height: 100%;
+              width: 0;
+              left: -29%;
+              top: 0;
+              background: var(--pink);
+              transform: skew(50deg);
+              transform-origin: top left;
+              transition: 0.5s;
+            }
+            &:hover {
+              box-shadow: 0 0 5px var(--pink), 0 0 25px var(--pink);
+              color: var(--white);
+              &:after {
+                width: 125%;
+              }
             }
           }
-        }
 
-        &:active {
-          transform: translateY(15px);
+          &:active {
+            transform: translateY(15px);
+          }
         }
-      }
-      .Header_language {
-        @apply flex justify-center items-center p-2 cursor-pointer gap-1;
-        .Header_language_img {
-          width: 15px;
-          height: 15px;
+        .Header_language {
+          @apply flex justify-center items-center p-2 cursor-pointer gap-1;
+          .Header_language_img {
+            width: 15px;
+            height: 15px;
+          }
         }
       }
     }
   }
+}
+.Modal.animate_in {
+  opacity: 1;
+}
+.Modal.animate_out {
+  opacity: 0;
 }
