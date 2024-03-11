@@ -2,6 +2,7 @@
 @import url("./Adaptation.scss");
 
 .Cases {
+  @apply flex justify-center items-center flex-col;
   .Cases_body {
     @apply flex justify-center items-center flex-col;
   }

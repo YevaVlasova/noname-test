@@ -3,9 +3,28 @@ import Layout from "./Layout";
 import AllCases from "./Cases_components/AllCases";
 import "../styles/CasesCarousel.scss";
 import "../styles/Adaptation.scss";
+import { useEffect, useState } from "react";
 
 const Cases = () => {
-  const height = 2600;
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [height, setHeight] = useState(2600);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    if (windowWidth < 1246) {
+      setHeight(2900);
+    }
+    if (windowWidth > 1246) {
+      setHeight(2600);
+    }
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [windowWidth]);
+
   return (
     <div className="Cases" id="cases">
       <Layout height={height}>

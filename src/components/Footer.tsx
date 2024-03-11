@@ -1,11 +1,12 @@
 import Layout from "./Layout";
 import "../styles/Footer.scss";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { handleAnimation } from "../services/titleAnimationService";
 
 const Footer = () => {
   const titleRef = useRef<HTMLHeadingElement | null>(null);
-  const height = 600;
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [height, setHeight] = useState(600);
 
   useEffect(() => {
     const handleScrollEvent = () => {
@@ -16,6 +17,22 @@ const Footer = () => {
       window.removeEventListener("scroll", handleScrollEvent);
     };
   }, []);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    if (windowWidth < 1246) {
+      setHeight(900);
+    }
+    if (windowWidth > 1246) {
+      setHeight(600);
+    }
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [windowWidth]);
 
   return (
     <div className="Footer" id="footer">
