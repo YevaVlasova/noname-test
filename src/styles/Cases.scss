@@ -312,12 +312,14 @@
       .Small_Case_right_text {
         @apply text-start;
         width: 480px;
+        margin-top: 10px;
         h1 {
           font-size: 18px;
           font-weight: 900;
         }
         h5 {
           color: var(--grey);
+          font-size: 14px;
         }
         span {
           display: block;

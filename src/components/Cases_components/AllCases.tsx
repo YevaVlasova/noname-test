@@ -25,23 +25,23 @@ const AllCases = () => {
   return (
     <div className="AllCases">
       <h1 className="AllCases_title" ref={titleRef}>
-        Сучасні кейси
+        Modern cases
       </h1>
       <div className="Main_Case" ref={bigCaseRef}>
         <div className="Main_Case_left">
           <div className="Main_Case_left_projects">
             <h1>350+</h1>
             <span></span>
-            <h4>реалізованих проєктів у IT</h4>
+            <h4>implemented projects in IT</h4>
           </div>
           <span className="Main_Case_underline"></span>
           <p className="Main_Case_left_about">
-            Протягом 22 років ми набули крутого досвіду й краще за інших знаємо, на чому фокусуватися, як не допустити
-            фатальних помилок та як визначити маршрут та інструменти для руху вперед.
+            Over the course of 22 years, we have gained a lot of experience and know better than anyone else what to
+            focus on, how to avoid fatal mistakes and how to determine the route and tools to move forward.
           </p>
           <span className="Main_Case_underline"></span>
           <button className="Main_Case_left_btn --shine">
-            Про нашу компанію{" "}
+            About our company{" "}
             <img
               width="24"
               height="24"
@@ -54,12 +54,12 @@ const AllCases = () => {
           <div className="Main_Case_right_header">
             <div className="Main_Case_right_header_left">
               <div className="Main_Case_right_header_circle"></div>
-              <h3 className="Main_Case_right_header_title">Наш підхід</h3>
+              <h3 className="Main_Case_right_header_title">Our approach</h3>
             </div>
             <div className="Main_Case_right_header_right">
               <p>
-                Ми будемо з вами на кожному етапі розробки, починаючи з першої консультації і закінчуючи релізом
-                проєкту. Крім того, ми забезпечимо подальшу підтримку.
+                We will be with you at every stage of development, from the first consultation to the release of the of
+                the project. We'll also provide ongoing support.
               </p>
             </div>
           </div>
@@ -67,7 +67,7 @@ const AllCases = () => {
             <div className="Main_Case_right_data">
               <h1 className="Main_Case_right_body_count">8</h1>
               <span></span>
-              <p className="Main_Case_right_body_text">кроків для втілення ваших ідей у реальність</p>
+              <p className="Main_Case_right_body_text">steps to turn your ideas into reality</p>
             </div>
           </div>
         </div>
@@ -93,7 +93,7 @@ const AllCases = () => {
           ))}
         </div>
         <div className="Small_Case_left" ref={smallCaseLeftRef}>
-          <h1 className="Small_Case_left_title">Наші клієнти</h1>
+          <h1 className="Small_Case_left_title">Our clients</h1>
           <div className="Small_Case_left_slider">
             <div className="Small_Case_left_slide_track">
               {companiesLogo.map((item, index) => (

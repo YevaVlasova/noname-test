@@ -23,7 +23,7 @@ const AboutData = () => {
         </div>
         <div className="About_data_right">
           <button className="About_data_feature" onMouseEnter={() => changeTechnology(0)}>
-            Web розробка
+            Web development
             <img
               width="24"
               height="24"
@@ -32,7 +32,7 @@ const AboutData = () => {
             />
           </button>
           <button className="About_data_feature" onMouseEnter={() => changeTechnology(1)}>
-            Mobile розробка
+            Mobile development
             <img
               width="24"
               height="24"
@@ -41,7 +41,7 @@ const AboutData = () => {
             />
           </button>
           <button className="About_data_feature" onMouseEnter={() => changeTechnology(2)}>
-            CRM системи
+            CRM development
             <img
               width="24"
               height="24"
@@ -50,7 +50,7 @@ const AboutData = () => {
             />
           </button>
           <button className="About_data_feature" onMouseEnter={() => changeTechnology(3)}>
-            Software розробка
+            Software development
             <img
               width="24"
               height="24"
@@ -59,7 +59,7 @@ const AboutData = () => {
             />
           </button>
           <button className="About_data_feature" onMouseEnter={() => changeTechnology(4)}>
-            DevOps розробка
+            DevOps development
             <img
               width="24"
               height="24"

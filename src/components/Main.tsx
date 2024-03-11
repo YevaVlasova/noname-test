@@ -31,9 +31,9 @@ const Main = () => {
             <h1 className="Main_colored_title">Digital</h1>
             <h1 className="Main_title">Development</h1>
             <p className="Main_about">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos magni, sed quam nam consequuntur
-              impedit vero quo. Labore blanditiis incidunt perferendis. Ipsum, nihil provident facilis dolorum impedit
-              voluptates! Tenetur, dolore!
+              Our journey began with a passion for visual storytelling and a commitment to turning ideas into impactful
+              designs. With a team of dedicated professionals, we've honed our skills to deliver exceptional results for
+              our clients.
             </p>
           </div>
         </div>

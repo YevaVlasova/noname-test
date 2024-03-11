@@ -36,7 +36,7 @@ const CasesSlider = () => {
   return (
     <div className="CasesSlider">
       <h1 className="CasesSlider_title" ref={titleRef}>
-        Наші роботи
+        Our Works
       </h1>
       <div className="carousel">
         <ul className="carousel__list" onClick={handleSlideClick} ref={listRef}>

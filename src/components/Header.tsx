@@ -31,25 +31,25 @@ const Header = () => {
       <div className="Header_nav_section">
         <div className="Header_nav">
           <div className="Header_nav_item" onClick={scrollToHome}>
-            Головна
+            Home
           </div>
           <div className="Header_nav_item" onClick={scrollToAbout}>
-            Послуги
+            Services
           </div>
           <div className="Header_nav_item" onClick={scrollToCases}>
-            Кейси
+            Cases
           </div>
           <div className="Header_nav_item" onClick={scrollToFeedback}>
-            Відгуки
+            Feedback
           </div>
           <div className="Header_nav_item" onClick={scrollToFooter}>
-            Контакти
+            Contacts
           </div>
         </div>
       </div>
       <div className="Header_contacts_section">
         <div className="Header_contacts">
-          <button className="Header_feedback --shine">Зв'язатися з нами</button>
+          <button className="Header_feedback --shine">Contact Us</button>
         </div>
       </div>
     </div>

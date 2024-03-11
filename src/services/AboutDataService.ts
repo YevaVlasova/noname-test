@@ -2,7 +2,7 @@ const iconsUrl: any = [
   {
     id: 0,
     count: 11,
-    technology: "Web технології",
+    technology: "Web development",
     urls: [
       "https://img.icons8.com/ios-glyphs/30/626066/react.png",
       "https://img.icons8.com/fluency-systems-filled/30/626066/nextjs.png",
@@ -21,7 +21,7 @@ const iconsUrl: any = [
   {
     id: 1,
     count: 7,
-    technology: "Mobile технології",
+    technology: "Mobile development",
     urls: [
       "https://img.icons8.com/ios-glyphs/30/626066/swift.png",
       "https://img.icons8.com/ios-filled/30/626066/flutter.png",
@@ -36,7 +36,7 @@ const iconsUrl: any = [
   {
     id: 2,
     count: 7,
-    technology: "CRM технології",
+    technology: "CRM development",
     urls: [
       "https://img.icons8.com/ios-filled/30/626066/laravel.png",
       "https://img.icons8.com/ios/30/626066/java-coffee-cup-logo--v1.png",
@@ -51,7 +51,7 @@ const iconsUrl: any = [
   {
     id: 3,
     count: 7,
-    technology: "Software технології",
+    technology: "Software development",
     urls: [
       "https://img.icons8.com/ios-filled/50/626066/c-plus-plus-logo.png",
       "https://img.icons8.com/ios/30/626066/java-coffee-cup-logo--v1.png",
@@ -66,7 +66,7 @@ const iconsUrl: any = [
   {
     id: 4,
     count: 7,
-    technology: "DevOps технології",
+    technology: "DevOps development",
     urls: [
       "https://img.icons8.com/windows/30/626066/amazon-web-services.png",
       "https://img.icons8.com/ios-filled/30/626066/azure-api-manager.png",

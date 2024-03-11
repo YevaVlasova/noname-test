@@ -19,20 +19,20 @@ const YourFeedback = () => {
   return (
     <div className="YourFeedback">
       <h1 className="YourFeedback_title" ref={titleRef}>
-        Обговоримо Ваш проєкт
+        Let's discuss your project
       </h1>
       <div className="YourFeedback_body" ref={bodyRef}>
         <div className="YourFeedback_body_form">
           <div className="YourFeedback_body_form_left">
             <h1 className="YourFeedback_body_title">
-              Звертайтеся до нас за безкоштовною консультацією, це можливість обговорити свої ідеї з експертами з
-              діджиталізації. Залиште свій номер, ми передзвонимо!
+              Contact us for a free consultation, it's an opportunity to discuss your ideas with experts in
+              digitalization experts. Leave your number and we will call you back!
             </h1>
             <div className="YourFeedback_body_data">
-              <input type="text" placeholder="Номер телефону" />
-              <input type="text" placeholder="Ваш E-mail" />
+              <input type="text" placeholder="Phone number" />
+              <input type="text" placeholder="Your E-mail" />
               <button className="YourFeedback_body_data_btn --shine">
-                Відправити
+                Send
                 <img
                   width="20"
                   height="20"
@@ -52,18 +52,18 @@ const YourFeedback = () => {
             </div>
             <div className="YourFeedback_body_form_data">
               <h1 className="YourFeedback_body_form_text">
-                Допомагаю своїм клієнтам вирішувати складні бізнес-завдання за допомогою кастомних IT-рішень
+                I help my clients solve complex business problems with custom IT solutions
               </h1>
               <div className="YourFeedback_body_form_details">
                 <p>CEO & Project Manager</p>
                 <div className="YourFeedback_body_form_details_experience">
                   <div className="Experience_years">
                     <h1>7+</h1>
-                    <p>років у компанії</p>
+                    <p>years in company</p>
                   </div>
                   <div className="Experience_count">
                     <h1>160+</h1>
-                    <p>успішних проєктів</p>
+                    <p>of successful projects</p>
                   </div>
                 </div>
               </div>

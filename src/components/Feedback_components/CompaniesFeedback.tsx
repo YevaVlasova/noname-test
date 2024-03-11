@@ -24,7 +24,7 @@ const CompaniesFeedback = () => {
   return (
     <div className="CompaniesFeedback">
       <h1 className="CompaniesFeedback_title" ref={titleRef}>
-        Що кажуть наші клієнти
+        What our customers say
       </h1>
       <div className="CompaniesFeedback_body">
         <div className="CompaniesFeedback_card c_1" ref={c1Ref}>
@@ -37,9 +37,9 @@ const CompaniesFeedback = () => {
           </div>
           <span className="CompaniesFeedback_underline"></span>
           <p className="CompaniesFeedback_data">
-            Name розробила захоплюючий мобільний додаток для гри, який надає гравцям можливість насолоджуватися
-            захоплюючим геймплеєм та отримувати нові враження. Додаток вдало збалансував гру міжнапівперід, зменшивши
-            потребу в зайвих зверненнях гравців до служби підтримки.
+            Name has developed an exciting mobile game application that gives players the opportunity to enjoy the
+            exciting gameplay and get new experiences. The app has successfully balanced the game between the two
+            semi-periods, reducing the the need for unnecessary calls to the support team.
           </p>
           <span className="CompaniesFeedback_underline"></span>
           <div className="CompaniesFeedback_user">
@@ -67,9 +67,9 @@ const CompaniesFeedback = () => {
           </div>
           <span className="CompaniesFeedback_underline"></span>
           <p className="CompaniesFeedback_data">
-            Name розробила захоплюючий мобільний додаток для гри, який надає гравцям можливість насолоджуватися
-            захоплюючим геймплеєм та отримувати нові враження. Додаток вдало збалансував гру міжнапівперід, зменшивши
-            потребу в зайвих зверненнях гравців до служби підтримки.
+            Name has developed an exciting mobile game application that gives players the opportunity to enjoy the
+            exciting gameplay and get new experiences. The app has successfully balanced the game between the two
+            semi-periods, reducing the the need for unnecessary calls to the support team.
           </p>
           <span className="CompaniesFeedback_underline"></span>
           <div className="CompaniesFeedback_user">
@@ -97,9 +97,9 @@ const CompaniesFeedback = () => {
           </div>
           <span className="CompaniesFeedback_underline"></span>
           <p className="CompaniesFeedback_data">
-            Name розробила захоплюючий мобільний додаток для гри, який надає гравцям можливість насолоджуватися
-            захоплюючим геймплеєм та отримувати нові враження. Додаток вдало збалансував гру міжнапівперід, зменшивши
-            потребу в зайвих зверненнях гравців до служби підтримки.
+            Name has developed an exciting mobile game application that gives players the opportunity to enjoy the
+            exciting gameplay and get new experiences. The app has successfully balanced the game between the two
+            semi-periods, reducing the the need for unnecessary calls to the support team.
           </p>
           <span className="CompaniesFeedback_underline"></span>
           <div className="CompaniesFeedback_user">

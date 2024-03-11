@@ -24,14 +24,14 @@ const AboutTechnologies = () => {
         <div className="About_technologies_left">
           <div className="About_technologies_left_title">
             <div className="About_technologies_circle"></div>
-            <h3 className="About_technologies_title_text">Стек технологій</h3>
+            <h3 className="About_technologies_title_text">Tech stack</h3>
           </div>
           <p className="About_technologies_text">
-            Ми надаємо технологічні компетенції та практичний досвід для розробки ефективних програмних рішень, що
-            відповідають вимогам та метам вашого підприємства.
+            We provide technological competencies and practical experience to develop effective software solutions that
+            that meet the requirements and goals of your business.
           </p>
           <button className="About_technologies_button --shine">
-            Усі технології{" "}
+            All technologies{" "}
             <img
               width="24"
               height="24"
@@ -47,31 +47,31 @@ const AboutTechnologies = () => {
               className={`About_technologies_right_btn ${activeButton === 0 ? "active" : ""}`}
               onClick={() => handleButtonClick(0)}
             >
-              Web розробка
+              Web development
             </button>
             <button
               className={`About_technologies_right_btn ${activeButton === 1 ? "active" : ""}`}
               onClick={() => handleButtonClick(1)}
             >
-              Mobile розробка
+              Mobile development
             </button>
             <button
               className={`About_technologies_right_btn ${activeButton === 2 ? "active" : ""}`}
               onClick={() => handleButtonClick(2)}
             >
-              CRM системи
+              CRM development
             </button>
             <button
               className={`About_technologies_right_btn ${activeButton === 3 ? "active" : ""}`}
               onClick={() => handleButtonClick(3)}
             >
-              Software розробка
+              Software development
             </button>
             <button
               className={`About_technologies_right_btn ${activeButton === 4 ? "active" : ""}`}
               onClick={() => handleButtonClick(4)}
             >
-              DevOps розробка
+              DevOps development
             </button>
           </div>
           <div className="About_technologies_right_content">
