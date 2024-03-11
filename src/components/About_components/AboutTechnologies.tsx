@@ -37,10 +37,10 @@ const AboutTechnologies = () => {
               height="24"
               src="https://img.icons8.com/fluency-systems-filled/48/05010d/decentralized-network.png"
               alt="decentralized-network"
+              loading="lazy"
             />
           </button>
         </div>
-        <div className="About_technologies_vertical_line"></div>
         <div className="About_technologies_right">
           <div className="About_technologies_right_header">
             <button
@@ -87,7 +87,7 @@ const AboutTechnologies = () => {
               {url &&
                 url.urls.map((item, index) => (
                   <div key={index} className="About_technologies_right_data_item">
-                    <img width="30" height="30" src={item} alt={`icon-${index}`} />
+                    <img width="30" height="30" src={item} alt={`icon-${index} `} loading="lazy" />
                     <p>{url.names[index]}</p>
                   </div>
                 ))}

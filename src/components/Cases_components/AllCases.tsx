@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import "../../styles/Cases.scss";
+import "../../styles/Adaptation.scss";
 import { handleAnimation } from "../../services/titleAnimationService";
 import { casesData, companiesLogo } from "../../services/casesDataService";
 
@@ -47,6 +48,7 @@ const AllCases = () => {
               height="24"
               src="https://img.icons8.com/material-rounded/24/05010d/sort-right.png"
               alt="sort-right"
+              loading="lazy"
             />
           </button>
         </div>
@@ -74,23 +76,25 @@ const AllCases = () => {
       </div>
       <div className="Small_Cases">
         <div className="Small_Case_right" ref={smallCaseRightRef}>
-          {casesData.map((item, index) => (
-            <div className="Small_Case_right_item" key={index}>
-              <div
-                className="Small_Case_right_img"
-                style={{
-                  backgroundImage: `${item.image}`,
-                }}
-              >
-                <div className="Small_Case_right_img_type">{item.type}</div>
+          <div className="Small_Case_scroll">
+            {casesData.map((item, index) => (
+              <div className="Small_Case_right_item" key={index}>
+                <div
+                  className="Small_Case_right_img"
+                  style={{
+                    backgroundImage: `${item.image}`,
+                  }}
+                >
+                  <div className="Small_Case_right_img_type">{item.type}</div>
+                </div>
+                <div className="Small_Case_right_text">
+                  <h1>{item.title}</h1>
+                  <h5>{item.text}</h5>
+                  {item.id !== 5 ? <span></span> : <div></div>}
+                </div>
               </div>
-              <div className="Small_Case_right_text">
-                <h1>{item.title}</h1>
-                <h5>{item.text}</h5>
-                {item.id !== 5 ? <span></span> : <div></div>}
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
         <div className="Small_Case_left" ref={smallCaseLeftRef}>
           <h1 className="Small_Case_left_title">Our clients</h1>
@@ -98,12 +102,12 @@ const AllCases = () => {
             <div className="Small_Case_left_slide_track">
               {companiesLogo.map((item, index) => (
                 <div className="Small_Case_left_slide" key={index}>
-                  <img src={item.url} alt="" />
+                  <img src={item.url} alt="" loading="lazy" />
                 </div>
               ))}
               {companiesLogo.map((item, index) => (
                 <div className="Small_Case_left_slide" key={index}>
-                  <img src={item.url} alt="" />
+                  <img src={item.url} alt="" loading="lazy" />
                 </div>
               ))}
             </div>

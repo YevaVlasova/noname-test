@@ -18,7 +18,7 @@ const AboutData = () => {
       <div className="About_data">
         <div className="About_data_left">
           <div className="About_data_img">
-            <img src={currTechnology} alt="" />
+            <img src={currTechnology} alt="" loading="lazy" />
           </div>
         </div>
         <div className="About_data_right">
@@ -29,6 +29,7 @@ const AboutData = () => {
               height="24"
               src="https://img.icons8.com/material-rounded/24/66636a/sort-right.png"
               alt="sort-right"
+              loading="lazy"
             />
           </button>
           <button className="About_data_feature" onMouseEnter={() => changeTechnology(1)}>
@@ -38,6 +39,7 @@ const AboutData = () => {
               height="24"
               src="https://img.icons8.com/material-rounded/24/66636a/sort-right.png"
               alt="sort-right"
+              loading="lazy"
             />
           </button>
           <button className="About_data_feature" onMouseEnter={() => changeTechnology(2)}>
@@ -47,6 +49,7 @@ const AboutData = () => {
               height="24"
               src="https://img.icons8.com/material-rounded/24/66636a/sort-right.png"
               alt="sort-right"
+              loading="lazy"
             />
           </button>
           <button className="About_data_feature" onMouseEnter={() => changeTechnology(3)}>
@@ -56,6 +59,7 @@ const AboutData = () => {
               height="24"
               src="https://img.icons8.com/material-rounded/24/66636a/sort-right.png"
               alt="sort-right"
+              loading="lazy"
             />
           </button>
           <button className="About_data_feature" onMouseEnter={() => changeTechnology(4)}>
@@ -65,6 +69,7 @@ const AboutData = () => {
               height="24"
               src="https://img.icons8.com/material-rounded/24/66636a/sort-right.png"
               alt="sort-right"
+              loading="lazy"
             />
           </button>
         </div>

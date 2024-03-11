@@ -23,10 +23,9 @@ const About = () => {
       <Layout height={height}>
         <div className="About_page">
           <h1 className="About_title" ref={titleRef}>
-            About Us
+            Our Services
           </h1>
           <div className="About_body">
-            <div className="About_header"></div>
             <AboutData></AboutData>
             <AboutTechnologies></AboutTechnologies>
           </div>

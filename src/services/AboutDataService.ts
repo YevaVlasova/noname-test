@@ -1,7 +1,7 @@
 const iconsUrl: any = [
   {
     id: 0,
-    count: 11,
+    count: 10,
     technology: "Web development",
     urls: [
       "https://img.icons8.com/ios-glyphs/30/626066/react.png",
@@ -14,9 +14,8 @@ const iconsUrl: any = [
       "https://img.icons8.com/ios-glyphs/30/626066/php.png",
       "https://img.icons8.com/ios/30/626066/java-coffee-cup-logo--v1.png",
       "https://img.icons8.com/windows/30/626066/nodejs.png",
-      "https://img.icons8.com/windows/30/626066/amazon-web-services.png",
     ],
-    names: ["React", "Next.js", "Angular", "Vue", "TypeScript", "MySQL", "Express.js", "PHP", "Java", "Node.js", "AWS"],
+    names: ["React", "Next.js", "Angular", "Vue", "TypeScript", "MySQL", "Express.js", "PHP", "Java", "Node.js"],
   },
   {
     id: 1,

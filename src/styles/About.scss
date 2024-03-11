@@ -25,27 +25,6 @@
       padding: 35px;
       border-radius: 25px;
       width: 1500px;
-      .About_header {
-        @apply flex justify-between items-center;
-        padding-bottom: 40px;
-
-        .About_title_btn {
-          @apply flex justify-center items-center gap-3;
-          transition: 0.5s all;
-          border-radius: 15px;
-          height: 40px;
-          padding: 10px;
-          box-shadow: 5px 10px 20px 0px var(--black);
-
-          &:hover {
-            transform: scale(1.1);
-            box-shadow: 5px 10px 20px 0px var(--pink);
-          }
-          &:active {
-            transform: translateY(15px);
-          }
-        }
-      }
       .About_data {
         @apply flex justify-center items-center gap-x-20;
         .About_data_left {
@@ -60,6 +39,7 @@
               width: 100%;
               height: 100%;
               object-fit: cover;
+              border-radius: 25px;
               object-position: left;
               opacity: 0.9;
             }
@@ -178,12 +158,6 @@
               transform: translateY(15px);
             }
           }
-        }
-        .About_technologies_vertical_line {
-          height: 370px;
-          width: 1px;
-          background-color: var(--grey);
-          opacity: 0.5;
         }
         .About_technologies_right {
           @apply flex items-center flex-col;

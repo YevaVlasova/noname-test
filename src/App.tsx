@@ -1,12 +1,13 @@
-import { useEffect } from "react";
 import About from "./components/About";
 import Header from "./components/Header";
 import Main from "./components/Main";
-import "./styles/App.scss";
-import { generateStars } from "./services/starService";
 import Cases from "./components/Cases";
 import Feedback from "./components/Feedback";
 import Footer from "./components/Footer";
+import { useEffect } from "react";
+import { generateStars } from "./services/starService";
+import "./styles/App.scss";
+import "./styles/Adaptation.scss";
 
 function App() {
   useEffect(() => {

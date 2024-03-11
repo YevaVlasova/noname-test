@@ -25,7 +25,7 @@ const Header = () => {
   return (
     <div className="Header">
       <div className="Header_logo_section">
-        <img src="../noname-logo.png" alt="" className="Header_logo" />
+        <img src="../noname-logo.png" alt="" className="Header_logo" loading="lazy" />
         <h1 className="Header_logo_title">Name</h1>
       </div>
       <div className="Header_nav_section">

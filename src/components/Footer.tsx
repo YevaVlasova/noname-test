@@ -46,6 +46,7 @@ const Footer = () => {
                     height="30"
                     src="https://img.icons8.com/external-others-zufarizal-robiyanto/64/05010d/external-attachment-mutuline-stationary-others-zufarizal-robiyanto.png"
                     alt=""
+                    loading="lazy"
                   />
                 </button>
                 <p>Attach a file</p>
@@ -57,7 +58,13 @@ const Footer = () => {
             <div className="Footer_data_table">
               <div className="Footer_data_location">
                 {" "}
-                <img width="30" height="30" src="https://img.icons8.com/ios/50/ffffff/globe--v1.png" alt="globe--v1" />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/ios/50/ffffff/globe--v1.png"
+                  alt="globe--v1"
+                  loading="lazy"
+                />
                 <p>Kyiv, Ukraine</p>
               </div>
               <p className="Footer_curr_loc">м. 2a Andriy Verkhoglyad Str., office 440 (section 2, floor 23), Kyiv</p>

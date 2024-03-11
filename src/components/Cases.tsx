@@ -1,7 +1,8 @@
 import CasesSlider from "./Cases_components/Cases_slider";
 import Layout from "./Layout";
-import "../styles/CasesCarousel.scss";
 import AllCases from "./Cases_components/AllCases";
+import "../styles/CasesCarousel.scss";
+import "../styles/Adaptation.scss";
 
 const Cases = () => {
   const height = 2600;

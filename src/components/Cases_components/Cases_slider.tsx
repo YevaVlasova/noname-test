@@ -1,4 +1,5 @@
 import "../../styles/CasesCarousel.scss";
+import "../../styles/Adaptation.scss";
 import { useEffect, useRef, useState } from "react";
 import { activateSlide, getSlideIndex, nextSlide, prevSlide } from "../../services/CarouselService";
 import { handleSlide } from "../../services/titleAnimationService";
@@ -50,7 +51,7 @@ const CasesSlider = () => {
             >
               <div className="carousel__box">
                 <div className="carousel__image">
-                  <img src={item.image} width="480" height="720" alt="" />
+                  <img src={item.image} width="480" height="720" alt="" loading="lazy" />
                 </div>
               </div>
             </li>

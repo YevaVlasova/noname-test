@@ -7,7 +7,7 @@ const Feedback = () => {
   return (
     <div className="Feedback" id="feedback">
       <Layout height={height}>
-        <div className="Feedback_body">
+        <div className="Feedback_body" style={{ height: height }}>
           <CompaniesFeedback></CompaniesFeedback>
           <YourFeedback></YourFeedback>
         </div>
