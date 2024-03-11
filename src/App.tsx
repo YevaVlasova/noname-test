@@ -6,6 +6,7 @@ import "./styles/App.scss";
 import { generateStars } from "./services/starService";
 import Cases from "./components/Cases";
 import Feedback from "./components/Feedback";
+import Footer from "./components/Footer";
 
 function App() {
   useEffect(() => {
@@ -20,6 +21,7 @@ function App() {
       <About></About>
       <Cases></Cases>
       <Feedback></Feedback>
+      <Footer></Footer>
     </div>
   );
 }

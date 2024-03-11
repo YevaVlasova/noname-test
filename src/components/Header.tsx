@@ -17,6 +17,10 @@ const Header = () => {
     const feedbackElement = document.getElementById("feedback") as HTMLElement;
     feedbackElement.scrollIntoView({ behavior: "smooth" });
   };
+  const scrollToFooter = () => {
+    const footerElement = document.getElementById("footer") as HTMLElement;
+    footerElement.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <div className="Header">
@@ -38,7 +42,9 @@ const Header = () => {
           <div className="Header_nav_item" onClick={scrollToFeedback}>
             Відгуки
           </div>
-          <div className="Header_nav_item">Контакти</div>
+          <div className="Header_nav_item" onClick={scrollToFooter}>
+            Контакти
+          </div>
         </div>
       </div>
       <div className="Header_contacts_section">
