@@ -1,12 +1,17 @@
 import "../../styles/CasesCarousel.scss";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { activateSlide, getSlideIndex, nextSlide, prevSlide } from "../../services/CarouselService";
-import { handleScroll } from "../../services/titleAnimationService";
+import { handleSlide } from "../../services/titleAnimationService";
 import { carouselData } from "../../services/CarouselDataService";
 
 const CasesSlider = () => {
   const titleRef = useRef<HTMLHeadingElement | null>(null);
   let listRef = useRef<HTMLUListElement | null>(null);
+  const [activeIndex, setActiveIndex] = useState(6);
+
+  const handleItemClick = (index: any) => {
+    setActiveIndex(index);
+  };
 
   const handleSlideClick = (e: any) => {
     const max = window.matchMedia("screen and (max-width: 600px)").matches ? 5 : 8;
@@ -21,7 +26,7 @@ const CasesSlider = () => {
   };
 
   useEffect(() => {
-    const handleScrollEvent = () => handleScroll(titleRef);
+    const handleScrollEvent = () => handleSlide(titleRef);
     window.addEventListener("scroll", handleScrollEvent);
     return () => {
       window.removeEventListener("scroll", handleScrollEvent);
@@ -36,7 +41,13 @@ const CasesSlider = () => {
       <div className="carousel">
         <ul className="carousel__list" onClick={handleSlideClick} ref={listRef}>
           {carouselData.map((item, index) => (
-            <li className="carousel__item" tabIndex={index} key={index}>
+            <li
+              className="carousel__item"
+              tabIndex={index}
+              key={index}
+              data-active={activeIndex === index ? "data-active" : null}
+              onClick={() => handleItemClick(index)}
+            >
               <div className="carousel__box">
                 <div className="carousel__image">
                   <img src={item.image} width="480" height="720" alt="" />

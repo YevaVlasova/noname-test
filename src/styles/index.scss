@@ -38,3 +38,21 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
+
+@keyframes shadowChange {
+  0% {
+    box-shadow: 0 0 15px 5px #7000ff;
+  }
+  25% {
+    box-shadow: 0 0 15px 5px #f13dd4;
+  }
+  50% {
+    box-shadow: 0 0 15px 5px #f83a3a;
+  }
+  75% {
+    box-shadow: 0 0 15px 5px #f13dd4;
+  }
+  100% {
+    box-shadow: 0 0 15px 5px #7000ff;
+  }
+}

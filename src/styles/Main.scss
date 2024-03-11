@@ -11,6 +11,8 @@
     padding-top: 120px;
     .Main_code_image {
       z-index: 1000;
+      transform: translateY(300px);
+      transition: 0.5s all;
     }
     .Main_lights {
       @apply absolute;
@@ -43,7 +45,7 @@
         color: transparent;
         z-index: 1000;
         font-size: 80px;
-        opacity: 0;
+        opacity: 1;
         transition: 0.5s all;
         background-image: -webkit-linear-gradient(left, #7000ff, #f13dd4, #7000ff);
         background-size: 1000px 200px;
@@ -68,6 +70,10 @@
       }
     }
   }
+}
+
+.Main_code_image.animate_fade_up_in {
+  transform: translateY(0px) !important;
 }
 
 @keyframes rotate {

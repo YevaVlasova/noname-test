@@ -12,7 +12,7 @@ export const carouselData = [
     image: "https://i.postimg.cc/vBR2ygLJ/64918b5d3d6a92-11060349.webp",
   },
   {
-    image: "https://i.postimg.cc/zDS6JvgW/maxresdefault.jpg",
+    image: "https://i.postimg.cc/gkdSQ6BB/space-advisor-website.jpg",
   },
   {
     image: "https://i.postimg.cc/4xbG7GnH/dxo-photolab7-main.webp",

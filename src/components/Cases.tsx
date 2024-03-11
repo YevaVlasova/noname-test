@@ -4,7 +4,7 @@ import "../styles/CasesCarousel.scss";
 import AllCases from "./Cases_components/AllCases";
 
 const Cases = () => {
-  const height = 2400;
+  const height = 2600;
   return (
     <div className="Cases">
       <Layout height={height}>
