@@ -6,7 +6,7 @@ import AllCases from "./Cases_components/AllCases";
 const Cases = () => {
   const height = 2600;
   return (
-    <div className="Cases">
+    <div className="Cases" id="cases">
       <Layout height={height}>
         <div className="Cases_body">
           <CasesSlider></CasesSlider>

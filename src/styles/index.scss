@@ -23,6 +23,7 @@ body {
   background-color: var(--black);
   color: rgb(255, 255, 255);
   overflow-y: scroll;
+  overflow-x: hidden;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
   font-family: "Manrope", sans-serif;

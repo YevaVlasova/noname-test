@@ -15,8 +15,6 @@ export const handleSlide = (title: any) => {
 export const handleMainSlide = (title: any) => {
   if (title.current) {
     const rect = title.current.getBoundingClientRect();
-    const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
-    console.log(rect.top, viewportHeight, rect.bottom);
     if (rect.top > -500) {
       title.current.classList.add("animate_fade_up_in");
     } else {

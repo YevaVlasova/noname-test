@@ -5,6 +5,7 @@ import Main from "./components/Main";
 import "./styles/App.scss";
 import { generateStars } from "./services/starService";
 import Cases from "./components/Cases";
+import Feedback from "./components/Feedback";
 
 function App() {
   useEffect(() => {
@@ -18,6 +19,7 @@ function App() {
       <Main></Main>
       <About></About>
       <Cases></Cases>
+      <Feedback></Feedback>
     </div>
   );
 }

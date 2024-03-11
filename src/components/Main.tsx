@@ -21,7 +21,7 @@ const Main = () => {
   }, []);
 
   return (
-    <div className="Main">
+    <div className="Main" id="home">
       <Layout height={height}>
         <div className="Main_images">
           <img src="../lights.png" alt="" className="Main_lights" />

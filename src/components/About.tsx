@@ -7,7 +7,7 @@ const About = () => {
   const height = 1400;
 
   return (
-    <div className="About">
+    <div className="About" id="about">
       <Layout height={height}>
         <div className="About_body">
           <div className="About_header">
