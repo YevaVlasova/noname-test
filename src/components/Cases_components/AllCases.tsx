@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import "../../styles/Cases.scss";
-import { handleFade, handleSlideSmallLeftCase, handleSlideSmallRightCase } from "../../services/titleAnimationService";
+import { handleAnimation } from "../../services/titleAnimationService";
 import { casesData, companiesLogo } from "../../services/casesDataService";
 
 const AllCases = () => {
@@ -11,10 +11,10 @@ const AllCases = () => {
 
   useEffect(() => {
     const handleScrollEvent = () => {
-      handleFade(titleRef);
-      handleFade(bigCaseRef);
-      handleSlideSmallRightCase(smallCaseRightRef);
-      handleSlideSmallLeftCase(smallCaseLeftRef);
+      handleAnimation(titleRef);
+      handleAnimation(bigCaseRef);
+      handleAnimation(smallCaseRightRef);
+      handleAnimation(smallCaseLeftRef);
     };
     window.addEventListener("scroll", handleScrollEvent);
     return () => {

@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import "../../styles/Feedback.scss";
-import { handleFade } from "../../services/titleAnimationService";
+import { handleAnimation } from "../../services/titleAnimationService";
 
 const YourFeedback = () => {
   const titleRef = useRef<HTMLHeadingElement | null>(null);
@@ -8,8 +8,8 @@ const YourFeedback = () => {
 
   useEffect(() => {
     const handleScrollEvent = () => {
-      handleFade(titleRef);
-      handleFade(bodyRef);
+      handleAnimation(titleRef);
+      handleAnimation(bodyRef);
     };
     window.addEventListener("scroll", handleScrollEvent);
     return () => {

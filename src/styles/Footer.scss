@@ -1,3 +1,5 @@
+@import url("./index.scss");
+
 .Footer {
   .Footer_body {
     width: 1000px;
@@ -213,7 +215,7 @@
   }
 }
 
-.Footer_body_title.animate_fade_in {
+.Footer_body_title.animate {
   opacity: 1;
   transform: translateY(0px) !important;
 }

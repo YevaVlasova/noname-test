@@ -1,3 +1,5 @@
+@import url("./index.scss");
+
 .CompaniesFeedback {
   @apply flex justify-start items-center flex-col text-start;
   .CompaniesFeedback_title {
@@ -335,61 +337,25 @@
   opacity: 1;
   transform: translateX(0%) !important;
 }
-.c_1.animate_right_slide_in {
+.c_1.animate {
   transform: translateX(0) !important;
   opacity: 1 !important;
   transition: opacity 0.6s, transform 0.6s;
 }
-.c_2.animate_fade_in {
+.c_2.animate {
   opacity: 1 !important;
   transition: opacity 0.6s;
 }
-.c_3.animate_left_slide_in {
+.c_3.animate {
   transform: translateX(0) !important;
   opacity: 1 !important;
   transition: opacity 0.6s, transform 0.6s;
 }
-.YourFeedback_title.animate_fade_in {
+.YourFeedback_title.animate {
   opacity: 1 !important;
   transform: translateY(0px) !important;
 }
 
-.YourFeedback_body.animate_fade_in {
+.YourFeedback_body.animate {
   opacity: 1 !important;
-}
-
-@keyframes borderGlow {
-  0% {
-    border-color: rgba(112, 0, 255, 0.4);
-  }
-  25% {
-    border-color: rgba(241, 61, 212, 0.4);
-  }
-  50% {
-    border-color: rgba(248, 58, 58, 0.4);
-  }
-  75% {
-    border-color: rgba(241, 61, 212, 0.4);
-  }
-  100% {
-    border-color: rgba(112, 0, 255, 0.4);
-  }
-}
-
-@keyframes boxShadowGlow {
-  0% {
-    box-shadow: 3px 3px 5px 5px rgba(112, 0, 255, 0.4);
-  }
-  25% {
-    box-shadow: 3px 3px 5px 5px rgba(241, 61, 212, 0.4);
-  }
-  50% {
-    box-shadow: 3px 3px 5px 5px rgba(248, 58, 58, 0.4);
-  }
-  75% {
-    box-shadow: 3px 3px 5px 5px rgba(241, 61, 212, 0.4);
-  }
-  100% {
-    box-shadow: 3px 3px 5px 5px rgba(112, 0, 255, 0.4);
-  }
 }

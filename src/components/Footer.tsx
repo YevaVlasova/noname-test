@@ -1,7 +1,7 @@
 import Layout from "./Layout";
 import "../styles/Footer.scss";
 import { useEffect, useRef } from "react";
-import { handleFade } from "../services/titleAnimationService";
+import { handleAnimation } from "../services/titleAnimationService";
 
 const Footer = () => {
   const titleRef = useRef<HTMLHeadingElement | null>(null);
@@ -9,7 +9,7 @@ const Footer = () => {
 
   useEffect(() => {
     const handleScrollEvent = () => {
-      handleFade(titleRef);
+      handleAnimation(titleRef);
     };
     window.addEventListener("scroll", handleScrollEvent);
     return () => {

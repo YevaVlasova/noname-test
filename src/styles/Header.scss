@@ -15,7 +15,6 @@
     .Header_logo {
       width: 60px;
       height: 60px;
-      animation: pulse 1.5s linear infinite;
     }
     .Header_logo_title {
       text-transform: uppercase;
@@ -114,17 +113,5 @@
         }
       }
     }
-  }
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
   }
 }

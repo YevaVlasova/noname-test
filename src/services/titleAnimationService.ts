@@ -23,37 +23,14 @@ export const handleMainSlide = (title: any) => {
   }
 };
 
-export const handleFade = (title: any) => {
+export const handleAnimation = (title: any) => {
   if (title.current) {
     const rect = title.current.getBoundingClientRect();
     const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
     if (rect.top < viewportHeight) {
-      title.current.classList.add("animate_fade_in");
+      title.current.classList.add("animate");
     } else {
-      title.current.classList.remove("animate_fade_in");
-    }
-  }
-};
-
-export const handleSlideSmallRightCase = (title: any) => {
-  if (title.current) {
-    const rect = title.current.getBoundingClientRect();
-    const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
-    if (rect.top < viewportHeight) {
-      title.current.classList.add("animate_right_slide_in");
-    } else {
-      title.current.classList.remove("animate_right_slide_in");
-    }
-  }
-};
-export const handleSlideSmallLeftCase = (title: any) => {
-  if (title.current) {
-    const rect = title.current.getBoundingClientRect();
-    const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
-    if (rect.top < viewportHeight) {
-      title.current.classList.add("animate_left_slide_in");
-    } else {
-      title.current.classList.remove("animate_left_slide_in");
+      title.current.classList.remove("animate");
     }
   }
 };

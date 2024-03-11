@@ -1,11 +1,6 @@
 import { useEffect, useRef } from "react";
 import "../../styles/Feedback.scss";
-import {
-  handleFade,
-  handleSlide,
-  handleSlideSmallLeftCase,
-  handleSlideSmallRightCase,
-} from "../../services/titleAnimationService";
+import { handleAnimation, handleSlide } from "../../services/titleAnimationService";
 
 const CompaniesFeedback = () => {
   const titleRef = useRef<HTMLHeadingElement | null>(null);
@@ -16,9 +11,9 @@ const CompaniesFeedback = () => {
   useEffect(() => {
     const handleScrollEvent = () => {
       handleSlide(titleRef);
-      handleSlideSmallRightCase(c1Ref);
-      handleFade(c2Ref);
-      handleSlideSmallLeftCase(c3Ref);
+      handleAnimation(c1Ref);
+      handleAnimation(c2Ref);
+      handleAnimation(c3Ref);
     };
     window.addEventListener("scroll", handleScrollEvent);
     return () => {
