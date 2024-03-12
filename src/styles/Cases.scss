@@ -270,6 +270,7 @@
     width: 90%;
   }
   .Small_Case_right {
+    position: absolute;
     background: rgb(198, 175, 175);
     background: linear-gradient(162deg, rgba(198, 175, 175, 0.2) 24%, rgba(148, 52, 103, 0.2) 87%);
     width: 530px;
@@ -344,13 +345,14 @@
   .Small_Case_left {
     @apply flex justify-center items-center flex-col;
     background: rgb(148, 52, 103);
+    position: sticky;
     background: linear-gradient(162deg, rgba(148, 52, 103, 0.25) 23%, rgba(105, 31, 31, 0.25) 78%);
     width: 1240px;
     height: 250px;
     margin-top: 10px;
     border-radius: 25px;
     opacity: 0;
-    transform: translateX(120%);
+    transform: translateX(-100%);
     transition: opacity 0.6s, transform 0.6s;
     padding: 25px;
 
@@ -408,18 +410,22 @@
 }
 
 .AllCases_title.animate {
+  position: relative !important;
   opacity: 1;
   transform: translateY(0px);
 }
 .Main_Case.animate {
+  position: relative !important;
   opacity: 1;
 }
 .Small_Case_right.animate {
+  position: relative !important;
   opacity: 1;
   transform: translateX(0);
   transition: opacity 0.6s, transform 0.6s;
 }
 .Small_Case_left.animate {
+  position: relative !important;
   opacity: 1;
   transform: translateX(0);
   transition: opacity 0.6s, transform 0.6s;

@@ -15,8 +15,6 @@
 
 html {
   scroll-behavior: smooth;
-  // overflow-y: scroll;
-  // overflow-x: hidden;
 }
 
 body {
@@ -25,7 +23,7 @@ body {
   background-color: var(--black);
   color: rgb(255, 255, 255);
   overflow-y: scroll;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
   font-family: "Manrope", sans-serif;

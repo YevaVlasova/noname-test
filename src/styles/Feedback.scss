@@ -139,13 +139,14 @@
         }
       }
       .c_2 {
+        transform: translateX(-100%);
         opacity: 0;
         &:hover {
           transform: scale(1.04);
         }
       }
       .c_3 {
-        transform: translateX(100%);
+        transform: translateX(-100%);
         opacity: 0;
         &:hover {
           transform: translateX(5px) translateY(-5px) !important;
@@ -336,28 +337,35 @@
 }
 
 .CompaniesFeedback_title.animate-slide-in {
+  position: relative !important;
   opacity: 1;
   transform: translateX(0%) !important;
 }
 .c_1.animate {
+  position: relative !important;
   transform: translateX(0) !important;
   opacity: 1 !important;
   transition: opacity 0.6s, transform 0.6s;
 }
 .c_2.animate {
+  position: relative !important;
+  transform: translateX(0) !important;
   opacity: 1 !important;
-  transition: opacity 0.6s;
+  transition: opacity 0.6s, transform 0.6s;
 }
 .c_3.animate {
+  position: relative !important;
   transform: translateX(0) !important;
   opacity: 1 !important;
   transition: opacity 0.6s, transform 0.6s;
 }
 .YourFeedback_title.animate {
+  position: relative !important;
   opacity: 1 !important;
   transform: translateY(0px) !important;
 }
 
 .YourFeedback_body.animate {
+  position: relative !important;
   opacity: 1 !important;
 }

@@ -1,11 +1,12 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import "../styles/Main.scss";
 import Layout from "./Layout";
 import { handleMainSlide } from "../services/titleAnimationService";
 
 const Main = () => {
   const mainImageRef = useRef<HTMLImageElement | null>(null);
-  const height = 1300;
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [height, setHeight] = useState(1300);
   useEffect(() => {
     const handleScrollEvent = () => {
       handleMainSlide(mainImageRef);
@@ -19,6 +20,22 @@ const Main = () => {
   useEffect(() => {
     handleMainSlide(mainImageRef);
   }, []);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    if (windowWidth < 750) {
+      setHeight(1000);
+    }
+    if (windowWidth > 750) {
+      setHeight(1300);
+    }
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [windowWidth]);
 
   return (
     <div className="Main" id="home">

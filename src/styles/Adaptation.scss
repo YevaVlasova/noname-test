@@ -567,6 +567,11 @@
 }
 
 @media only screen and (min-width: 320px) and (max-width: 750px) {
+  .Main {
+    .Main_images {
+      height: 900px !important;
+    }
+  }
   .Layout {
     .Layout_body {
       .Layout_line {
@@ -638,6 +643,11 @@
                 width: 70vw;
                 height: 200px;
               }
+            }
+          }
+          .About_data_right {
+            .About_data_feature {
+              width: 65vw !important;
             }
           }
         }
@@ -793,6 +803,51 @@
           }
           .Footer_data_send {
             width: 80vw !important;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 465px) {
+  .Feedback_body {
+    .CompaniesFeedback {
+      .CompaniesFeedback_title {
+        width: 70vw !important;
+        font-size: 35px !important;
+      }
+      .CompaniesFeedback_body {
+        height: 1300px !important;
+        width: 80vw !important;
+        .CompaniesFeedback_card {
+          height: 400px !important;
+          width: 80vw !important;
+        }
+      }
+    }
+    .YourFeedback {
+      height: 1450px !important;
+      .YourFeedback_title {
+        width: 70vw !important;
+        font-size: 40px !important;
+      }
+      .YourFeedback_body {
+        .YourFeedback_body_form {
+          @apply flex justify-center items-center flex-col text-start;
+          height: 1050px !important;
+          width: 80vw !important;
+          span {
+            width: 360px !important;
+          }
+          .YourFeedback_body_form_left {
+            .YourFeedback_body_title {
+              font-size: 16px !important;
+            }
+          }
+          .YourFeedback_body_form_right {
+            @apply flex justify-center items-center flex-col;
+            width: 480px !important;
+            height: 700px !important;
           }
         }
       }

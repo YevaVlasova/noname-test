@@ -22,7 +22,11 @@ const About = () => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
-    if (windowWidth < 1246) {
+
+    if (windowWidth < 575) {
+      setHeight(2000);
+    }
+    if (windowWidth < 1246 && windowWidth > 575) {
       setHeight(1800);
     }
     if (windowWidth > 1246) {

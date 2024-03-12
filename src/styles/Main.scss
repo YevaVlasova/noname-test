@@ -17,6 +17,7 @@
     .Main_lights {
       @apply absolute;
       z-index: 500;
+      width: 50vw;
       opacity: 0.3;
       transition: 0.5s all;
       animation: rotate 7s linear infinite;
