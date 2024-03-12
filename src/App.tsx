@@ -22,7 +22,7 @@ function App() {
       <Main></Main>
       <About></About>
       <Cases></Cases>
-      {/* <Feedback></Feedback> */}
+      <Feedback></Feedback>
       <Footer></Footer>
     </div>
   );

@@ -935,6 +935,42 @@
       width: calc(100vw - 50px) !important;
     }
   }
+  .Footer {
+    .Footer_body {
+      width: 80vw !important;
+      .Footer_body_title {
+        font-size: 10vw !important;
+      }
+      .Footer_promo {
+        .Footer_promo_text {
+          width: 70vw !important;
+        }
+      }
+      .Footer_feedback {
+        justify-content: center !important;
+        flex-direction: column !important;
+        .Footer_input_body {
+          width: 80vw !important;
+          .Footer_input_section {
+            gap: 10px !important;
+            justify-content: center !important;
+            flex-direction: column !important;
+          }
+          input {
+            width: 80vw !important;
+          }
+          .Footer_data_send {
+            width: 80vw !important;
+          }
+        }
+        .Footer_data_table {
+          .Footer_curr_loc {
+            width: 70vw !important;
+          }
+        }
+      }
+    }
+  }
   .Feedback_body {
     .CompaniesFeedback {
       .CompaniesFeedback_title {
@@ -967,6 +1003,7 @@
             }
           }
           .YourFeedback_body_form_right {
+            width: 70vw !important;
             .YourFeedback_body_form_image {
               img {
                 width: 70vw !important;
@@ -987,42 +1024,6 @@
                 }
               }
             }
-          }
-        }
-      }
-    }
-  }
-  .Footer {
-    .Footer_body {
-      width: 80vw !important;
-      .Footer_body_title {
-        font-size: 10vw !important;
-      }
-      .Footer_promo {
-        .Footer_promo_text {
-          width: 70vw !important;
-        }
-      }
-      .Footer_feedback {
-        justify-content: center !important;
-        flex-direction: column !important;
-        .Footer_input_body {
-          width: 80vw !important;
-          .Footer_input_section {
-            gap: 10px !important;
-            justify-content: center !important;
-            flex-direction: column !important;
-          }
-          input {
-            width: 80vw !important;
-          }
-          .Footer_data_send {
-            width: 80vw !important;
-          }
-        }
-        .Footer_data_table {
-          .Footer_curr_loc {
-            width: 70vw !important;
           }
         }
       }
