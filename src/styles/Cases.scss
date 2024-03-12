@@ -16,16 +16,11 @@
     width: 90%;
     font-weight: 900;
     opacity: 0;
-    transform: translateX(-100%);
+    transform: translateX(-20%);
     transition: opacity 0.6s, transform 0.6s;
     animation: titleColorAnimation 5s infinite linear;
     text-shadow: 0 0 3px #7000ff;
   }
-}
-
-.CasesSlider_title.animate-slide-in {
-  opacity: 1;
-  transform: translateX(0);
 }
 
 .AllCases {
@@ -278,7 +273,7 @@
     margin-top: 10px;
     border-radius: 25px;
     opacity: 0;
-    transform: translateX(-120%);
+    transform: translateX(-20%);
     transition: opacity 0.6s, transform 0.6s;
     padding: 0px 15px;
     border: 5px solid;
@@ -352,7 +347,7 @@
     margin-top: 10px;
     border-radius: 25px;
     opacity: 0;
-    transform: translateX(-100%);
+    transform: translateX(-20%);
     transition: opacity 0.6s, transform 0.6s;
     padding: 25px;
 
@@ -407,6 +402,12 @@
       }
     }
   }
+}
+
+.CasesSlider_title.animate-slide-in {
+  position: relative !important;
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .AllCases_title.animate {

@@ -10,7 +10,7 @@
       width: 90%;
       font-weight: 900;
       opacity: 0;
-      transform: translateX(-100%);
+      transform: translateX(-20%);
       transition: opacity 0.6s, transform 0.6s;
       animation: titleColorAnimation 5s infinite linear;
       text-shadow: 0 0 3px #7000ff;
@@ -132,21 +132,21 @@
         }
       }
       .c_1 {
-        transform: translateX(-100%);
+        transform: translateX(-10%);
         opacity: 0;
         &:hover {
           transform: translateX(-5px) translateY(-5px) !important;
         }
       }
       .c_2 {
-        transform: translateX(-100%);
+        transform: translateX(-20%);
         opacity: 0;
         &:hover {
           transform: scale(1.04);
         }
       }
       .c_3 {
-        transform: translateX(-100%);
+        transform: translateX(-30%);
         opacity: 0;
         &:hover {
           transform: translateX(5px) translateY(-5px) !important;

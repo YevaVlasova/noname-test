@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import { generateStars } from "./services/starService";
 import "./styles/App.scss";
 import "./styles/Adaptation.scss";
+import "./styles/AdaptForMobile.scss";
 
 function App() {
   useEffect(() => {
