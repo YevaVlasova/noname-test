@@ -92,7 +92,7 @@ const Header = () => {
       {isMobile ? (
         <div className="Header_burger">
           <div className="Header_logo_section">
-            <img src="../noname-logo.png" alt="" className="Header_logo" loading="lazy" />
+            <img src="https://i.postimg.cc/sxXCsDhT/noname-logo.png" alt="" className="Header_logo" loading="lazy" />
             <h1 className="Header_logo_title">Name</h1>
           </div>
           <button onClick={showModal} className="Header_burger_btn">
@@ -108,7 +108,7 @@ const Header = () => {
       ) : (
         <div className="Header_body">
           <div className="Header_logo_section">
-            <img src="../noname-logo.png" alt="" className="Header_logo" loading="lazy" />
+            <img src="https://i.postimg.cc/sxXCsDhT/noname-logo.png" alt="" className="Header_logo" loading="lazy" />
             <h1 className="Header_logo_title">Name</h1>
           </div>
           <div className="Header_nav_section">

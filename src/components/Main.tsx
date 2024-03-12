@@ -41,9 +41,15 @@ const Main = () => {
     <div className="Main" id="home">
       <Layout height={height}>
         <div className="Main_images">
-          <img src="../lights.png" alt="" className="Main_lights" loading="lazy" />
+          <img src="https://i.postimg.cc/BbV96954/lights.png" alt="" className="Main_lights" loading="lazy" />
           <div className="Main_circle"></div>
-          <img src="../image 1.png" alt="" className="Main_code_image" ref={mainImageRef} loading="lazy" />
+          <img
+            src="https://i.postimg.cc/63zxkGy7/image-1.png"
+            alt=""
+            className="Main_code_image"
+            ref={mainImageRef}
+            loading="lazy"
+          />
           <div className="Main_text">
             <h1 className="Main_colored_title">Digital</h1>
             <h1 className="Main_title">Development</h1>

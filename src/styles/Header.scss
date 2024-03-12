@@ -8,7 +8,7 @@
     z-index: 2000 !important;
     .Header_modal {
       position: fixed;
-      height: 100vh;
+      height: 120vh;
       width: 350px;
       right: 0;
       background-color: var(--black);
@@ -71,7 +71,6 @@
       z-index: 1999;
     }
   }
-
   .Header_burger {
     @apply flex justify-between items-end gap-10 fixed;
     width: 100vw;

@@ -10,7 +10,10 @@ const Feedback = () => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
-    if (windowWidth < 950) {
+    if (windowWidth < 465) {
+      setHeight(3000);
+    }
+    if (windowWidth < 950 && windowWidth > 456) {
       setHeight(2700);
     }
     if (windowWidth < 1246 && windowWidth > 950) {
