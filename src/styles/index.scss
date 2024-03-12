@@ -34,10 +34,33 @@ body {
     -webkit-appearance: none;
     margin: 0;
   }
+
+  background: rgb(115, 25, 74);
+  background: linear-gradient(
+    45deg,
+    rgba(115, 25, 74, 1) 2%,
+    rgba(5, 1, 13, 1) 31%,
+    rgba(64, 7, 37, 1) 70%,
+    rgba(37, 1, 21, 1) 90%
+  );
+  background-size: 400% 400%;
+  animation: gradient 2s ease infinite;
 }
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @keyframes shadowChange {

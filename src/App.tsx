@@ -4,20 +4,15 @@ import Main from "./components/Main";
 import Cases from "./components/Cases";
 import Feedback from "./components/Feedback";
 import Footer from "./components/Footer";
-import { useEffect } from "react";
-import { generateStars } from "./services/starService";
 import "./styles/App.scss";
 import "./styles/Adaptation.scss";
 import "./styles/AdaptForMobile.scss";
+import Background from "./components/Background";
 
 function App() {
-  useEffect(() => {
-    generateStars();
-  });
-
   return (
     <div className="App">
-      <div className="sky"></div>
+      <Background></Background>
       <Header></Header>
       <Main></Main>
       <About></About>
