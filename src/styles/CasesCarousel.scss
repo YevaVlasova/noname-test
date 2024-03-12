@@ -2,7 +2,7 @@
 
 :root {
   --height: calc(80vh - 50px);
-  --width: 650px;
+  --width: 750px;
 }
 
 .carousel {
@@ -65,7 +65,7 @@
   flex-grow: 0;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
   .carousel__item {
     flex-basis: 20%;
   }

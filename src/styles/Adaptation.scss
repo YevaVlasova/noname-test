@@ -380,3 +380,188 @@
     }
   }
 }
+
+@media only screen and (min-width: 320px) and (max-width: 950px) {
+  .Main {
+    .Main_images {
+      .Main_code_image {
+        width: 500px !important;
+      }
+      .Main_lights {
+        width: 50% !important;
+      }
+      .Main_text {
+        .Main_colored_title,
+        .Main_title {
+          width: 500px !important;
+          font-size: 60px !important;
+        }
+        .Main_about {
+          width: 500px !important;
+          font-size: 18px !important;
+        }
+      }
+    }
+  }
+  .About {
+    .About_page {
+      .About_title {
+        font-size: 50px !important;
+      }
+      .About_body {
+        width: 500px !important;
+        .About_data {
+          @apply flex justify-center items-center flex-col gap-10;
+          .About_data_left {
+            .About_data_img {
+              width: 400px;
+              height: 200px;
+              img {
+                width: 400px;
+                height: 200px;
+              }
+            }
+          }
+          .About_data_right {
+            .About_data_feature {
+              width: 380px !important;
+            }
+          }
+        }
+        .About_technologies {
+          @apply flex justify-center items-center flex-col gap-10;
+          .About_technologies_left {
+            width: 85%;
+            .About_technologies_text {
+              font-size: 14px !important;
+            }
+          }
+          .About_technologies_right {
+            .About_technologies_right_content {
+              .About_technologies_right_data {
+                .About_technologies_right_data_item {
+                  width: 80px !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .CasesSlider {
+    .CasesSlider_title {
+      font-size: 50px !important;
+    }
+  }
+  .AllCases {
+    height: 1800px !important;
+    .AllCases_title {
+      font-size: 50px !important;
+    }
+    .Main_Case {
+      width: 500px !important;
+      .Main_Case_left {
+        padding: 5px !important;
+        .Main_Case_left_projects {
+          @apply text-center;
+          h1 {
+            font-size: 30px !important;
+          }
+          h4 {
+            font-size: 12px !important;
+          }
+        }
+        .Main_Case_left_btn {
+          font-size: 12px !important;
+
+          &.--shine {
+            &:after {
+              left: -38.5% !important;
+            }
+            &:hover {
+              &:after {
+                width: 135% !important;
+              }
+            }
+          }
+        }
+      }
+      .Main_Case_right {
+        .Main_Case_right_header {
+          @apply flex justify-center gap-5 flex-col;
+        }
+      }
+    }
+    .Small_Cases {
+      height: 900px !important;
+      width: 500px !important;
+    }
+    .Small_Case_left {
+      width: 500px !important;
+      margin-top: 20px !important;
+
+      .Small_Case_left_slider {
+        width: 440px !important;
+      }
+    }
+    .Small_Case_right {
+      width: 500px !important;
+      height: 600px !important;
+      .Small_Case_scroll {
+        height: 580px !important;
+      }
+    }
+  }
+  .Feedback_body {
+    .CompaniesFeedback {
+      .CompaniesFeedback_title {
+        width: 500px !important;
+        font-size: 50px !important;
+      }
+      .CompaniesFeedback_body {
+        height: 1200px !important;
+        width: 500px !important;
+        .CompaniesFeedback_card {
+          height: 400px !important;
+          width: 400px !important;
+        }
+      }
+    }
+    .YourFeedback {
+      height: 1450px !important;
+      .YourFeedback_title {
+        width: 500px !important;
+        font-size: 50px !important;
+      }
+      .YourFeedback_body {
+        .YourFeedback_body_form {
+          @apply flex justify-center items-center flex-col text-start;
+          height: 1050px !important;
+          width: 400px !important;
+          span {
+            width: 360px !important;
+          }
+          .YourFeedback_body_form_left {
+            .YourFeedback_body_title {
+              font-size: 16px !important;
+            }
+          }
+          .YourFeedback_body_form_right {
+            @apply flex justify-center items-center flex-col;
+            width: 480px !important;
+            height: 700px !important;
+          }
+        }
+      }
+    }
+  }
+  .Footer {
+    .Footer_body {
+      width: 500px !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 750px) {
+}
