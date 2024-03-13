@@ -37,8 +37,8 @@ const CompaniesFeedback = () => {
           </div>
           <span className="CompaniesFeedback_underline"></span>
           <p className="CompaniesFeedback_data">
-            Name has developed an exciting mobile game application that gives players the opportunity to enjoy the
-            exciting gameplay and get new experiences. The app has successfully balanced the game between the two
+            ABC Digital has developed an exciting mobile game application that gives players the opportunity to enjoy
+            the exciting gameplay and get new experiences. The app has successfully balanced the game between the two
             semi-periods, reducing the the need for unnecessary calls to the support team.
           </p>
           <span className="CompaniesFeedback_underline"></span>
@@ -68,8 +68,8 @@ const CompaniesFeedback = () => {
           </div>
           <span className="CompaniesFeedback_underline"></span>
           <p className="CompaniesFeedback_data">
-            Name has developed an exciting mobile game application that gives players the opportunity to enjoy the
-            exciting gameplay and get new experiences. The app has successfully balanced the game between the two
+            ABC Digital has developed an exciting mobile game application that gives players the opportunity to enjoy
+            the exciting gameplay and get new experiences. The app has successfully balanced the game between the two
             semi-periods, reducing the the need for unnecessary calls to the support team.
           </p>
           <span className="CompaniesFeedback_underline"></span>
@@ -99,8 +99,8 @@ const CompaniesFeedback = () => {
           </div>
           <span className="CompaniesFeedback_underline"></span>
           <p className="CompaniesFeedback_data">
-            Name has developed an exciting mobile game application that gives players the opportunity to enjoy the
-            exciting gameplay and get new experiences. The app has successfully balanced the game between the two
+            ABC Digital has developed an exciting mobile game application that gives players the opportunity to enjoy
+            the exciting gameplay and get new experiences. The app has successfully balanced the game between the two
             semi-periods, reducing the the need for unnecessary calls to the support team.
           </p>
           <span className="CompaniesFeedback_underline"></span>
